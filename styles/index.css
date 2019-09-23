@@ -10,10 +10,11 @@ background: orange;
 .logo {
     width: 300px;
     position: relative;
+}
 .logo > img {
-        width: 200px;
+        width: 300px;
         position: absolute;
-        left: 10px;
+        left: 0px;
         right: 10px;
 
 }
@@ -52,6 +53,6 @@ background: orange;
 .search >img {
    width: 20px;
   
-  
+   justify-content: flex-end;
 
 }
