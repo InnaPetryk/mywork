@@ -1,10 +1,28 @@
-.header
-{
+* {
 
-display: flex;
-width: 100%;
-height: 100px;
-background: orange;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.header {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    background: orange;
+
+}
+.fict_header{
+    height: 100px;
+    box-shadow: 0 0 10px -5px orange;
+    border: 15px solid red;
 }
 
 .logo {
@@ -12,10 +30,12 @@ background: orange;
     position: relative;
 }
 .logo > img {
-        width: 300px;
+        width: 200px;
         position: absolute;
+        top:10px;
         left: 0px;
         right: 10px;
+        border-radius: 5px;
 
 }
 .navigation  {
@@ -31,7 +51,12 @@ background: orange;
 }
  
 .navigation > ul > li {
-    list-style: none;
+    list-style-type: none;
+
+}
+.navigation > ul > li.active {
+    border-bottom: 2px solid #0089ff;
+   
       
 }
 .navigation > ul > li > a {
@@ -55,4 +80,18 @@ background: orange;
   
    justify-content: flex-end;
 
+}
+.main {
+  flex: 1;
+  padding: 100px;
+}
+.footer {
+    width: 100%;
+    background-color: pink;
+
+}
+.test-shadow {
+    margin: 50px;
+    width: 200px;
+    height: 200px;
 }
