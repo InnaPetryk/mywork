@@ -15,80 +15,72 @@
             </div>
             <nav class="navigation">
                 <ul>
-                
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="contacts.html">CONTACTS</a></li>
-                   
                 </ul>
             </nav>
             <div class="search">
                 <img src="https://i.dlpng.com/static/png/1728470_thumb.png" alt="лупа">
                 <input type="text" placeholder="search">
             </div>
-            
         </header>
         <div class="fict_header" id="up"></div>
+       
         <main class="main">
             <h1>Main page</h1>
-                <a href="#modal" class="open_model">Open modal</a>
-        </main>
+            <section>
+                <div class="card">
+                    <div class="card__img" style="background-image: url(./images/caticon.png);"></div>
+                    <div class="card__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum officia voluptate ad numquam, aut voluptatem quia veniam deserunt aperiam excepturi recusandae, est nihil laboriosam laudantium enim cupiditate alias optio rerum!s</div>
+                </div>
+                <div class="card">
+                    <div class="card__img" style="background-image: url(./images/caticon2.png);"></div>
+                    <div class="card__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum officia voluptate ad numquam, aut voluptatem quia veniam deserunt aperiam excepturi recusandae, est nihil laboriosam laudantium enim cupiditate alias optio rerum!s</div>
+                </div>
+                <div class="card">
+                    <div class="card__img"  style="background-image: url(./images/caticon4.png);"></div>
+                    <div class="card__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum officia voluptate ad numquam, aut voluptatem quia veniam deserunt aperiam excepturi recusandae, est nihil laboriosam laudantium enim cupiditate alias optio rerum!s</div>
+                </div>
+                <div class="card">
+                    <div class="card__img"  style="background-image: url(./images/caticon5.png);"></div>
+                    <div class="card__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum officia voluptate ad numquam, aut voluptatem quia veniam deserunt aperiam excepturi recusandae, est nihil laboriosam laudantium enim cupiditate alias optio rerum!s</div>
+                    </div>
+                    <div class="card">
+                <div class="card__img"  style="background-image: url(./images/caticon6.png);"></div>
+                    <div class="card__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum officia voluptate ad numquam, aut voluptatem quia veniam deserunt aperiam excepturi recusandae, est nihil laboriosam laudantium enim cupiditate alias optio rerum!s</div>
+                </div>
+                </section>
+            </main>
 
-        <footer class="footer">
-            <p>Made by me &copy;</p>
-
-        </footer>
-        <div class="modal" id="modal">
-            <div class="modal_header">
-                <span class="modal_title">Modal window</span>
-                <a href="#close" class="modal_close">X</a>
-            </div>
-            <div class="modal_content">
-                dfhfbvcx<br/>
-                fdgcb<br/>
-                fdhk<br/>
-                gxxfdx<br/>
-                cgccfh<br/>
-                dfhfbvcx<br/>
-                fdgcb<br/>
-                dfhfbvcx<br/>
-                fdgcb<br/>
-                fdhk<br/>
-                gxxfdx<br/>
-                cgccfh<br/>
-                dfhfbvcx<br/>
-                fdgcb<br/>
-                fdhk<br/>
-                gxxfdx<br/>
-                cgccfh<br/>
-                dfhfbvcx<br/>
-                fdgcb<br/>
-                fdhk<br/>
-                gxxfdx<br/>
-                cgccfh<br/>
-                dfhfbvcx<br/>
-                fdgcb<br/>
-                fdhk<br/>
-                gxxfdx<br/>
-                cgccfh<br/>
-                dfhfbvcx<br/>
-                fdgcb<br/>
-                fdhk<br/>
-                gxxfdx<br/>
-                cgccfh<br/>
-
-</div>
-
-
-            <div class="modal_footer">
-                <a href="#ok" class="modal_button modal_button--success">OK</a>
-                <a href="#cancel" class="modal_button modal_button--danger">Cancel</a>
-            </div>
+            <style>
+                section {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-around
+                }
+                .card {
+                    width: 300px;
+                    height: 400px;
+                    margin-bottom: 20px;
+                    overflow: hidden;
+                    box-shadow: 0 0 2px 0 grey;
+                }
+                .card__img{
+                    height: 400px;
+                    width: 300px;
+                    background-size: cover;
+                    background-position: center;
+                    transition: all ease .5s;
+                }
+                .card:hover .card__img{
+                    height: 200px;
+                }
+            </style>
+    
+            <footer class="footer">
+                <p>Made by me &copy;</p>
+            </footer>
+    
         </div>
-
-
-        <a href="#up" class="up-button">ВВЕРХ</a>
-
-
-    </div>
-</body>
-</html>
+    </body>
+    </html>
