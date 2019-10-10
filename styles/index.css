@@ -91,8 +91,23 @@
   list-style-type: none;
 }
 
-.navigation > ul > li.active {
-  border-bottom: 2px solid #0089ff;
+.navigation > ul > li::after {
+  content: "";
+  display: block;
+  widows: 0%;
+  height: 3px;
+  margin: 0auto;
+  background: #0089ff;
+  -webkit-transition: all ease 5s;
+  transition: all ease 5s;
+}
+
+.navigation > ul > lihover::after {
+  width: 100%;
+}
+
+.navigation > ul > li:hover a {
+  color: #0089ff;
 }
 
 .navigation > ul > li > a {
