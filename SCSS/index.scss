@@ -11,6 +11,27 @@
     flex-direction: column;
     min-height: 100vh;
 }
+.show_header {
+    display: none;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 999999999;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: pink;
+    font-size: 40px;
+    text-align: center;
+    line-height: 50px;
+}
+.show_header_input {
+    display: none;
+}
+.show_header_input:checked + .header {
+
+    left: 0px;
+}
 .header {
     display: flex;
     position: fixed;
@@ -21,8 +42,6 @@
 }
 .fict_header{
     height: 100px;
-    box-shadow: 0 0 10px -5px orange;
-    border: 15px solid red;
 }
 
 .logo {
@@ -190,4 +209,23 @@ overflow-y: auto;
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     background: #555;
+  }
+  @media (max-width: 1024px) {
+      .show_header {
+        display: block;
+        
+      }
+      .header {
+          left: -50vw;
+          width: 50vw;
+          height: 100vh;
+          flex-direction: column;
+          transition: all ease .5s;
+      }
+
+      .logo img {
+          position: inherit;
+
+      }
+
   }
